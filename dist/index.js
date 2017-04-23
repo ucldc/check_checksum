@@ -51,7 +51,7 @@ var main = function main(args) {
   (0, _check_checksum2.default)(a.filename, a.checksum, a.algorithm, a.encoding).then(function () {
     console.log('match');
   }).catch(function (error) {
-    console.log(error);
+    console.error(error);
     process.exit(1);
   });
 };

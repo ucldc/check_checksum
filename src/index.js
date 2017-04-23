@@ -38,10 +38,10 @@ const main = (args) => {
     console.log('match');
   })
   .catch((error) => {
-    console.log(error);
+    console.error(error);
     process.exit(1);
   });
-}
+};
 
 /** copy python's main idiom for command line programs */
 if (require.main === module) { main(); }

@@ -55,3 +55,4 @@ https://booker.codes/how-to-build-and-publish-es6-npm-modules-today-with-babel/
 
 http://stackoverflow.com/a/33608835 -- “unexpected token import” in Nodejs5 and babel?
 
+https://medium.com/@dan_abramov/lint-like-it-s-2015-6987d44c5b48 -- es6 lint

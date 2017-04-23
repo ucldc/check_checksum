@@ -27,7 +27,7 @@ const check_checksum = (filename, checksum, algorithm = 'md5', encoding = 'hex')
     stream.on('error', (error) => {
       reject(error);
     });
-  })
+  });
 };
  
  
