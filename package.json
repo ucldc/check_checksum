@@ -1,0 +1,28 @@
+{
+  "name": "check_checksum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/check_checksum.js",
+  "scripts": {
+    "test": "babel-node ./node_modules/.bin/isparta cover _mocha",
+    "compile": "babel -d dist src",
+    "prepublish": "npm run compile"
+  },
+  "bin": {
+    "check-checksum": "dist/index.js"
+  },
+  "author": "Brian Tingle (UC Regents)",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "isparta": "^4.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+  }
+}
