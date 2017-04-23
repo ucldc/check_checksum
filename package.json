@@ -1,18 +1,19 @@
 {
   "name": "check_checksum",
   "version": "1.0.0",
-  "description": "",
+  "description": "check that a file's checksum matches expected value",
   "main": "dist/check_checksum.js",
   "scripts": {
     "test": "babel-node ./node_modules/.bin/isparta cover _mocha",
     "compile": "babel -d dist src",
-    "prepublish": "npm run compile"
+    "prepare": "npm run compile"
   },
   "bin": {
     "check-checksum": "dist/index.js"
   },
   "author": "Brian Tingle (UC Regents)",
   "license": "BSD-3-Clause",
+  "repository": "ucldc/check_checksum",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
