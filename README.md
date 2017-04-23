@@ -5,6 +5,7 @@ writing module in es6/es2015.
 
 ## example
 
+library:
 ```es6
 import check_checksum from 'check_checksum';
 
@@ -15,6 +16,12 @@ check_checksum(filename, expected_checksum)
   .then(() => { /* yes, they match */ })
   .catch((error) => { /* didn't work, see error for more info */ });
 
+```
+
+command line:
+```
+usage: check-checksum [-h] [-v] [--algorithm ALGORITHM] [--encoding ENCODING]
+                      filename checksum
 ```
 
 ## install
