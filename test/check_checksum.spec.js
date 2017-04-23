@@ -1,4 +1,5 @@
 import check_checksum from '../src/check_checksum';
+import main from '../src/index';
 
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
@@ -27,5 +28,13 @@ describe('check_checksum', () => {
     });
   });
   describe('command line wrapper', () => {
+    it('should work from the wrapper', () => {
+      main({
+        'filename': `${__dirname}/data-good/${testsum}`,
+        'checksum': testsum,
+        'algorithm': undefined,
+        'encoding': undefined,
+      });
+    });
   });
 });
